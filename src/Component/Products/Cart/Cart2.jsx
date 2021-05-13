@@ -147,7 +147,7 @@ export default function Cart2() {
                   </>
                 ) : (
                   <>
-                    <Link to="/Checkout">
+                    <Link>
                       <button class="btn" disabled={true}> CHECKOUT</button>
                     </Link>
                   </>
