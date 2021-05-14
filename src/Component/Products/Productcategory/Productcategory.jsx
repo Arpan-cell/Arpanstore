@@ -91,7 +91,7 @@ export default function Productcategory() {
                 
                   <Card.Body>
                     <Card.Title>{e}</Card.Title>
-                    <Card.Img src={`${cardinfo.image}`} />
+                    <Card.Img src="" />
                     <Link to={`/Categorydetails/${e}`}>
                       <Button variant="primary">Click</Button>
                     </Link>
