@@ -16,7 +16,7 @@ import {
   Accordion,
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Header from '../../../Layout/Header/Header';
+import Header from "../../../Layout/Header/Header";
 import "./Cart1.css";
 export default function Cart2() {
   const { products, totalqty, totalprice } = useSelector(
@@ -26,10 +26,8 @@ export default function Cart2() {
   const dispatchMethod = useDispatch();
   return (
     <>
-    <Header />
-      <h4 className='space'>
-        <b>Shopping Cart</b>
-      </h4>
+      <Header />
+
       {products.length > 0 ? (
         <>
           <div className="container">
@@ -161,10 +159,8 @@ export default function Cart2() {
         </>
       ) : (
         <>
-        <p >"Your cart is empty!"</p>
-        
+          <h5 className="space">"Your cart is empty!"</h5>
         </>
-        
       )}
     </>
   );
