@@ -7,7 +7,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Grid from '@material-ui/core/Grid';
 import {useSelector, useDispatch} from "react-redux";
 import currencyFormatter from "currency-formatter";
-
+import Header from "../../Layout/Header/Header";
 const useStyles = makeStyles((theme) => ({
   listItem: {
     padding: theme.spacing(1, 0),
@@ -26,6 +26,7 @@ export default function Review() {
 
   return (
     <React.Fragment>
+      <Header />
       <Typography variant="h6" gutterBottom>
         Order summary
       </Typography>

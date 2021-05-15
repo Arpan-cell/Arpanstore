@@ -10,8 +10,8 @@ import {
   Image,
   Carousel,
 } from "react-bootstrap";
+import Header from "../../../Layout/Header/Header";
 import { Link } from "react-router-dom";
-
 import Typography from "@material-ui/core/Typography";
 import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 // import Link from '@material-ui/core/Link';
@@ -44,6 +44,7 @@ export default function Productcategory() {
 
   return (
     <>
+    <Header />
       <div>
         <section>
           <div

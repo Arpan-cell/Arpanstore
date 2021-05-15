@@ -11,6 +11,7 @@ import { BsDash } from "react-icons/bs";
 import { BsPlus } from "react-icons/bs";
 import { toast } from "react-toastify";
 import Typography from "@material-ui/core/Typography";
+import Header from "../../../Layout/Header/Header";
 import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 // import Link from '@material-ui/core/Link';
 import "react-toastify/dist/ReactToastify.css";
@@ -59,6 +60,7 @@ export default function ProductDetails({ match }) {
   
   return (
     <>
+    <Header />
       {/* {Object.keys(ProductCategory3).length === 0 ? (
         <div className="loader">Loading...</div>
       ) : ( */}

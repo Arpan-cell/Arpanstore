@@ -1,8 +1,9 @@
 import React from 'react'
-
+import Header from "../Layout/Header/Header";
 export default function ReturnsPolicy() {
     return (
         <div>
+            <Header />
             <div className="container return">
                 
             <h5 >Returns Policy</h5>

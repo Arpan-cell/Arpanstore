@@ -1,7 +1,7 @@
 import React from "react";
 import Login from "../Auth/Login";
 import Registration from "../Auth/Registration";
-import Header from "../Layout/Header/Header";
+// import Header from "../Layout/Header/Header";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 
 import Home from "../Component/Home";
@@ -30,7 +30,7 @@ export default function Routing() {
   return (
     <>
       <BrowserRouter>
-        <Header />
+        {/* <Header /> */}
 
         <Switch>
           <Route path="/Home" component={Home} />

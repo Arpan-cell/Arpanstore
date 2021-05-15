@@ -17,7 +17,7 @@ import * as yup from "yup";
 import { useState } from "react";
 import { signup } from "../Actions/Auth.Action";
 import { useDispatch } from "react-redux";
-
+import Header from "../Layout/Header/Header";
 const validationSchema = yup.object({
   firstname: yup
     .string("Enter your Firstname")
@@ -93,6 +93,8 @@ export default function SignUp() {
   const classes = useStyles();
 
   return (
+    <>
+    <Header />
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
@@ -189,5 +191,6 @@ export default function SignUp() {
       </div>
       <Box mt={5}></Box>
     </Container>
+    </>
   );
 }

@@ -16,6 +16,7 @@ import {
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
+import Header from "../Layout/Header/Header";
 const Cart = () => {
   const { products, totalqty, totalprice } = useSelector(
     (state) => state.CartData
@@ -25,6 +26,7 @@ const Cart = () => {
 
   return (
     <div>
+      
       <div
         id="carouselExampleSlidesOnly"
         class="carousel slide"

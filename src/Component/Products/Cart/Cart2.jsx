@@ -16,6 +16,7 @@ import {
   Accordion,
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import Header from '../../../Layout/Header/Header';
 import "./Cart1.css";
 export default function Cart2() {
   const { products, totalqty, totalprice } = useSelector(
@@ -25,16 +26,17 @@ export default function Cart2() {
   const dispatchMethod = useDispatch();
   return (
     <>
-      <div className="container">
-        <div id="body">
-          <div class="card">
-            <div class="row a3">
-              <div class="col-md-9 cart">
-                <h4>
-                  <b>Shopping Cart</b>
-                </h4>
-                {products.length > 0 ? (
-                  <>
+    <Header />
+      <h4 className='space'>
+        <b>Shopping Cart</b>
+      </h4>
+      {products.length > 0 ? (
+        <>
+          <div className="container">
+            <div id="body">
+              <div class="card">
+                <div class="row a3">
+                  <div class="col-md-9 cart">
                     {products.map((product) => (
                       <div>
                         <div class="title">
@@ -107,38 +109,34 @@ export default function Cart2() {
                         </div>
                       </div>
                     ))}
-                  </>
-                ) : (
-                  "Your cart is empty!"
-                )}
 
-                <div class="back-to-shop">
-                  <Link to="/Productcategory">
-                    <BsArrowLeft />
-                  </Link>
-                  <span class="text-muted ">Back to shop</span>
-                </div>
-              </div>
-              <div class="col-md-3 summary">
-                <div>
-                  <h5>
-                    <b>Summary</b>
-                  </h5>
-                </div>
-                <hr />
-                <div class="row a3">
-                  <div class="col a1">ITEMS </div>
-                  <div class="col text-right"> {totalqty}</div>
-                </div>
-                <div class="row a3 a2">
-                  <div class="col">TOTAL PRICE</div>
-                  <div class="col text-right">
-                    {currencyFormatter.format(totalprice, {
-                      code: "USD",
-                    })}
+                    <div class="back-to-shop">
+                      <Link to="/Productcategory">
+                        <BsArrowLeft />
+                      </Link>
+                      <span class="text-muted ">Back to shop</span>
+                    </div>
                   </div>
-                </div>{" "}
-                {products.length > 0 ? (
+                  <div class="col-md-3 summary">
+                    <div>
+                      <h5>
+                        <b>Summary</b>
+                      </h5>
+                    </div>
+                    <hr />
+                    <div class="row a3">
+                      <div class="col a1">ITEMS </div>
+                      <div class="col text-right"> {totalqty}</div>
+                    </div>
+                    <div class="row a3 a2">
+                      <div class="col">TOTAL PRICE</div>
+                      <div class="col text-right">
+                        {currencyFormatter.format(totalprice, {
+                          code: "USD",
+                        })}
+                      </div>
+                    </div>{" "}
+                    {/* {products.length > 0 ? (
                   <>
                     
                     <Link to="/Checkout">
@@ -151,12 +149,23 @@ export default function Cart2() {
                       <button class="btn" disabled={true}> CHECKOUT</button>
                     </Link>
                   </>
-                )}
+                )} */}
+                    <Link to="/Checkout">
+                      <button class="btn">CHECKOUT</button>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </>
+      ) : (
+        <>
+        <p >"Your cart is empty!"</p>
+        
+        </>
+        
+      )}
     </>
   );
 }

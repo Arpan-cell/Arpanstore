@@ -2,11 +2,13 @@ import React from 'react'
 import { Container, Row, Col,Card,Button,Image,Carousel,Accordion } from "react-bootstrap";
 import { Link } from 'react-router-dom';
 import img3 from '../Images/faq.jpg'
+import Header from "../Layout/Header/Header";
 import Typography from '@material-ui/core/Typography';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 export default function FAQ() {
     return (
         <div>
+          <Header />
             <Image className='img3 w-100' src={img3} fluid />
              
             <section id="sectionppp1">

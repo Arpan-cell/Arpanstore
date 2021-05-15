@@ -19,12 +19,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 
 import SwiperCore, { EffectCoverflow, Pagination } from "swiper/core";
-
+import Header from "../Layout/Header/Header";
 import React, { useEffect } from "react";
 SwiperCore.use([EffectCoverflow, Pagination]);
 export default function Home() {
   return (
     <div>
+      <Header />
       <div>
         <div class="carousel-inner">
           <div class="carousel-item active">

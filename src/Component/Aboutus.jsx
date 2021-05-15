@@ -4,13 +4,14 @@ import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import {Button,Carousel, Container,Row,Col,Card,Image} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import img8 from '../Images/aboutus.jpeg'
-
+import Header from "../Layout/Header/Header";
 
 
 import { GiWorld } from "react-icons/gi";
 export default function Aboutus() {
     return (
         <div>
+          <Header />
             <section id="sectionppp1">
          <Container>
            <Row>

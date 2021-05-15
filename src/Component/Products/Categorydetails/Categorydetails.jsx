@@ -5,6 +5,7 @@ import { Card, Container, Row, Button, Col, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Typography from '@material-ui/core/Typography';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
+import Header from "../../../Layout/Header/Header";
 export default function Categorydetails({ match }) {
   let cdetails = match.params.cname;
   console.log(cdetails);
@@ -16,7 +17,7 @@ export default function Categorydetails({ match }) {
   }, [DispatchMethod]);
   return (
     <>
-     
+     <Header />
       <div>
       <section id="sectionppp1">
          <Container>

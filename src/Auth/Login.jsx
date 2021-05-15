@@ -27,15 +27,7 @@ import Visibility from "@material-ui/icons/Visibility";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import VisibilityOff from "@material-ui/icons/VisibilityOff";
 import Input from "@material-ui/core/Input";
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      <Link color="inherit" href="https://material-ui.com/"></Link>{" "}
-      {/* {new Date().getFullYear()} */}
-      {"."}
-    </Typography>
-  );
-}
+import Header from "../Layout/Header/Header";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -89,6 +81,8 @@ export default function SignIn() {
   const history = useHistory();
 
   return (
+    <>
+    <Header />
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
@@ -171,8 +165,9 @@ export default function SignIn() {
         </form>
       </div>
       <Box mt={8}>
-        <Copyright />
+        
       </Box>
     </Container>
+    </>
   );
 }

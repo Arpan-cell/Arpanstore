@@ -4,10 +4,11 @@ import Grid from '@material-ui/core/Grid';
 import TextField from '@material-ui/core/TextField';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
-
+import Header from "../../Layout/Header/Header";
 export default function PaymentForm() {
   return (
     <React.Fragment>
+      <Header />
       <Typography variant="h6" gutterBottom>
         Payment method
       </Typography>

@@ -16,7 +16,7 @@ import { Container, Row, Col, Card, Image, Carousel } from "react-bootstrap";
 import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
-
+import Header from "../../Layout/Header/Header";
 const useStyles = makeStyles((theme) => ({
   appBar: {
     position: "relative",
@@ -90,6 +90,7 @@ export default function Checkout() {
 
   return (
     <React.Fragment>
+      <Header />
       <CssBaseline />
       <AppBar position="absolute" color="default" className={classes.appBar}>
         <Toolbar>

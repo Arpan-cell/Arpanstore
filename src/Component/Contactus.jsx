@@ -5,7 +5,7 @@ import { Row, Col, Form, Button } from "react-bootstrap";
 import Typography from "@material-ui/core/Typography";
 import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 import { Link } from "react-router-dom";
-
+import Header from "../Layout/Header/Header";
 import { FaLocationArrow } from "react-icons/fa";
 import { FiPhoneCall } from "react-icons/fi";
 import { AiOutlineMail } from "react-icons/ai";
@@ -21,6 +21,7 @@ import img5 from '../Images/contact.jpg'
 export default function Contactus() {
   return (
     <div>
+      <Header />
       <img className='d-block w-100' src={img5} alt="" />
       <section id="sectionppp1">
         <Container>

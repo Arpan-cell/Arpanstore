@@ -6,7 +6,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import * as yup from "yup";
 import { useFormik } from "formik";
-
+import Header from "../../Layout/Header/Header";
 const validationSchema = yup.object({
   firstname: yup
     .string("Enter your firstname")
@@ -58,6 +58,7 @@ export default function AddressForm() {
   });
   return (
     <React.Fragment>
+      <Header />
       <Typography variant="h6" gutterBottom>
         Shipping address
       </Typography>

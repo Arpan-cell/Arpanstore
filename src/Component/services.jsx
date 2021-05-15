@@ -16,10 +16,11 @@ import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 // icon
 import { FaShippingFast } from "react-icons/fa";
 import { GiMoneyStack } from "react-icons/gi";
-
+import Header from "../Layout/Header/Header";
 export default function services() {
   return (
     <div>
+      <Header />
       <Image
       className='img4 w-100'
         src={img4}

@@ -10,6 +10,7 @@ import {
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import img6 from "../Images/myprofile.jpg";
+import Header from "../Layout/Header/Header";
 import Typography from "@material-ui/core/Typography";
 import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 import img7 from '../Images/user.png'
@@ -19,6 +20,7 @@ export default function Myprofile() {
   const user1 = localStorage.getItem("email");
   return (
       <>
+      <Header />
       <img className='d-block w-100' src={img6} alt="" />
     <div class="page-content page-container" id="page-content">
       <div class="padding">
